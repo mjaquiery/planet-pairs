@@ -1,0 +1,50 @@
+name: Fetch photos
+
+# Downloads the photo deck from Wikimedia Commons whenever the source list
+# changes on a branch, and commits the images and credits back to it.
+on:
+  push:
+    branches-ignore: [main, gh-pages]
+    paths:
+      - scripts/photo-sources.json
+      - scripts/fetch-photos.mjs
+      - .github/workflows/fetch-photos.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Fetch photos
+        id: fetch
+        run: node scripts/fetch-photos.mjs 2>&1 | tee fetch-photos.log
+        continue-on-error: true
+      - uses: actions/upload-artifact@v4
+        with:
+          name: fetch-photos-log
+          path: fetch-photos.log
+      - name: Commit photos
+        run: |
+          git add public/photos src/photos.json
+          if git diff --cached --quiet; then
+            echo "No photo changes."
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+            git commit -m "Update photo deck from Wikimedia Commons"
+            git push origin HEAD:${{ github.ref_name }}
+          fi
+      - name: Report problems
+        if: always()
+        run: |
+          if grep -q '^Problems:' fetch-photos.log; then
+            sed -n '/^Problems:/,$p' fetch-photos.log >> "$GITHUB_STEP_SUMMARY"
+            exit 1
+          fi

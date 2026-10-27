@@ -1,0 +1,19 @@
+import './styles.css';
+import { App } from './app';
+
+// Stop pinch-zoom, double-tap zoom and page bounce on iPad.
+for (const type of ['gesturestart', 'gesturechange', 'gestureend']) {
+  document.addEventListener(type, (e) => e.preventDefault());
+}
+document.addEventListener('touchmove', (e) => e.preventDefault(), { passive: false });
+document.addEventListener('contextmenu', (e) => e.preventDefault());
+
+new App(document.getElementById('app')!).start();
+
+if (import.meta.env.PROD && 'serviceWorker' in navigator) {
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('./sw.js').catch(() => {
+      // Offline support is best-effort.
+    });
+  });
+}
