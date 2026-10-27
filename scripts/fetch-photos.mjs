@@ -76,7 +76,7 @@ for (const [object, titles] of Object.entries(sources)) {
     photos.push({
       file,
       object,
-      title: stripHtml(meta.ObjectName?.value) || norm.replace(/^File:/, ''),
+      title: norm.replace(/^File:/, '').replace(/\.\w+$/, ''),
       artist: stripHtml(meta.Artist?.value) || stripHtml(meta.Credit?.value) || 'Unknown',
       license,
       source: info.descriptionurl,

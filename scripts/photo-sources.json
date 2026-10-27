@@ -1,7 +1,6 @@
 {
   "sun": [
     "File:The Sun by the Atmospheric Imaging Assembly of NASA's Solar Dynamics Observatory - 20100819.jpg",
-    "File:Sun white.jpg",
     "File:Sun920607.jpg",
     "File:Solar prominence from STEREO spacecraft September 29, 2008.jpg"
   ],
@@ -12,8 +11,7 @@
   ],
   "venus": [
     "File:Venus-real color.jpg",
-    "File:Venus from Mariner 10.jpg",
-    "File:PIA23791-Venus-NewlyProcessedView-20200608.jpg"
+    "File:Venus from Mariner 10.jpg"
   ],
   "earth": [
     "File:The Earth seen from Apollo 17.jpg",
@@ -47,7 +45,6 @@
   ],
   "neptune": [
     "File:Neptune - Voyager 2 (29347980845) flatten crop.jpg",
-    "File:Neptune Full.jpg",
-    "File:Neptune Voyager2 color calibrated.png"
+    "File:Neptune Full.jpg"
   ]
 }
