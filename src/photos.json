@@ -11,21 +11,13 @@
     {
       "file": "sun-2.jpg",
       "object": "sun",
-      "title": "Sun white",
-      "artist": "Geoff Elston",
-      "license": "CC BY 4.0",
-      "source": "https://commons.wikimedia.org/wiki/File:Sun_white.jpg"
-    },
-    {
-      "file": "sun-3.jpg",
-      "object": "sun",
       "title": "Sun920607",
       "artist": "NASA",
       "license": "Public domain",
       "source": "https://commons.wikimedia.org/wiki/File:Sun920607.jpg"
     },
     {
-      "file": "sun-4.jpg",
+      "file": "sun-3.jpg",
       "object": "sun",
       "title": "Solar prominence from STEREO spacecraft September 29, 2008",
       "artist": "NASA",
@@ -75,7 +67,7 @@
     {
       "file": "earth-1.jpg",
       "object": "earth",
-      "title": "The Blue Marble label QS:Lar,\"الگُلَّة (البلية) الزرقاء\"label QS:Len,\"The Blue Marble\"",
+      "title": "The Earth seen from Apollo 17",
       "artist": "NASA/Apollo 17 crew; taken by either Harrison Schmitt or Ron Evans",
       "license": "Public domain",
       "source": "https://commons.wikimedia.org/wiki/File:The_Earth_seen_from_Apollo_17.jpg"
@@ -231,14 +223,6 @@
       "artist": "NASA",
       "license": "Public domain",
       "source": "https://commons.wikimedia.org/wiki/File:Neptune_Full.jpg"
-    },
-    {
-      "file": "neptune-3.png",
-      "object": "neptune",
-      "title": "Neptune Voyager2 color calibrated",
-      "artist": "NASA / Voyager 2 / PDS / OPUS / Ardenau4",
-      "license": "CC0",
-      "source": "https://commons.wikimedia.org/wiki/File:Neptune_Voyager2_color_calibrated.png"
     }
   ]
 }
