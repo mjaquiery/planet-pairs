@@ -5,7 +5,14 @@ import { App } from './app';
 for (const type of ['gesturestart', 'gesturechange', 'gestureend']) {
   document.addEventListener(type, (e) => e.preventDefault());
 }
-document.addEventListener('touchmove', (e) => e.preventDefault(), { passive: false });
+document.addEventListener(
+  'touchmove',
+  (e) => {
+    // Only the credits list is allowed to scroll.
+    if (!(e.target as Element).closest?.('.credits-body')) e.preventDefault();
+  },
+  { passive: false },
+);
 document.addEventListener('contextmenu', (e) => e.preventDefault());
 
 new App(document.getElementById('app')!).start();
