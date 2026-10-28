@@ -1,0 +1,16 @@
+{
+  "name": "Planet Pairs",
+  "short_name": "Planet Pairs",
+  "description": "A gentle solar-system matching game for little ones.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "fullscreen",
+  "orientation": "any",
+  "background_color": "#14194a",
+  "theme_color": "#14194a",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

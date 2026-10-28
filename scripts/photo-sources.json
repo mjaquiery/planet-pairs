@@ -1,0 +1,50 @@
+{
+  "sun": [
+    "File:The Sun by the Atmospheric Imaging Assembly of NASA's Solar Dynamics Observatory - 20100819.jpg",
+    "File:Sun920607.jpg",
+    "File:Solar prominence from STEREO spacecraft September 29, 2008.jpg"
+  ],
+  "mercury": [
+    "File:Mercury in color - Prockter07-edit1.jpg",
+    "File:Mercury in true color.jpg",
+    "File:Mercury Globe-MESSENGER mosaic centered at 0degN-0degE.jpg"
+  ],
+  "venus": [
+    "File:Venus-real color.jpg",
+    "File:Venus from Mariner 10.jpg"
+  ],
+  "earth": [
+    "File:The Earth seen from Apollo 17.jpg",
+    "File:Africa and Europe from a Million Miles Away.png",
+    "File:Earth Eastern Hemisphere.jpg"
+  ],
+  "moon": [
+    "File:FullMoon2010.jpg",
+    "File:Full Moon Luc Viatour.jpg",
+    "File:Moon nearside LRO.jpg"
+  ],
+  "mars": [
+    "File:OSIRIS Mars true color.jpg",
+    "File:Mars Valles Marineris.jpeg",
+    "File:Mars 23 aug 2003 hubble.jpg"
+  ],
+  "jupiter": [
+    "File:Jupiter and its shrunken Great Red Spot.jpg",
+    "File:Jupiter by Cassini-Huygens.jpg",
+    "File:Jupiter, image taken by NASA's Hubble Space Telescope, June 2019 - Edited.jpg"
+  ],
+  "saturn": [
+    "File:Saturn during Equinox.jpg",
+    "File:Saturn from Cassini Orbiter (2004-10-06).jpg",
+    "File:Saturn (planet) large.jpg"
+  ],
+  "uranus": [
+    "File:Uranus2.jpg",
+    "File:Uranus as seen by NASA's Voyager 2 (remastered) - JPEG converted.jpg",
+    "File:Uranus Voyager2 color calibrated.png"
+  ],
+  "neptune": [
+    "File:Neptune - Voyager 2 (29347980845) flatten crop.jpg",
+    "File:Neptune Full.jpg"
+  ]
+}
